@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "743068770245",
+    "firebase_url": "https://gelombang-f1a38.firebaseio.com",
+    "project_id": "gelombang-f1a38",
+    "storage_bucket": "gelombang-f1a38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743068770245:android:549207cd3dea06151cb5ac",
+        "android_client_info": {
+          "package_name": "com.gelombang.apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743068770245-fntd1g9b4rilh6128739799fibhb0ki4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcV0ZiqLdD-bugbR_qAY0b9sb5JIoMZsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743068770245-fntd1g9b4rilh6128739799fibhb0ki4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

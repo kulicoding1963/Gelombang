@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".ui.MainMenuActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
+
+    <Button
+        android:id="@+id/btn_pendahuluan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_background_round"
+        android:drawableStart="@drawable/book"
+        android:padding="10dp"
+        android:text="@string/pendahuluan"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_materi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <Button
+        android:id="@+id/btn_materi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_background_round"
+        android:drawableStart="@drawable/ic_open_book"
+        android:padding="10dp"
+        android:text="@string/materi"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_latihan"
+        app:layout_constraintEnd_toEndOf="@+id/btn_pendahuluan"
+        app:layout_constraintStart_toStartOf="@+id/btn_pendahuluan"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pendahuluan" />
+
+    <Button
+        android:id="@+id/btn_latihan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_background_round"
+        android:drawableStart="@drawable/training"
+        android:padding="10dp"
+        android:text="@string/latihan"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_diskusi"
+        app:layout_constraintEnd_toEndOf="@+id/btn_materi"
+        app:layout_constraintStart_toStartOf="@+id/btn_materi"
+        app:layout_constraintTop_toBottomOf="@+id/btn_materi" />
+
+    <Button
+        android:id="@+id/btn_diskusi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/gradient_background_round"
+        android:drawableStart="@drawable/discuss"
+        android:padding="10dp"
+        android:text="@string/diskusi"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_latihan"
+        app:layout_constraintStart_toStartOf="@+id/btn_latihan"
+        app:layout_constraintTop_toBottomOf="@+id/btn_latihan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

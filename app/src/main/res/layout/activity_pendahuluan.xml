@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.menu.PendahuluanActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
+
+    <Button
+        android:id="@+id/btn_ki"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/gradient_background_round"
+        android:drawableStart="@drawable/ic_open_book"
+        android:padding="10dp"
+        android:text="@string/kompetensi_inti_ki"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_kd"
+        app:layout_constraintEnd_toEndOf="@+id/btn_kd"
+        app:layout_constraintStart_toStartOf="@+id/btn_kd"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <Button
+        android:id="@+id/btn_kd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/gradient_background_round"
+        android:drawableStart="@drawable/ic_open_book"
+        android:padding="10dp"
+        android:text="@string/kompetensi_dasar_kd"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_indikator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ki" />
+
+    <Button
+        android:id="@+id/btn_indikator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background_round"
+        android:drawableStart="@drawable/ic_open_book"
+        android:padding="10dp"
+        android:text="@string/indikator"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_tujuan"
+        app:layout_constraintEnd_toEndOf="@+id/btn_kd"
+        app:layout_constraintStart_toStartOf="@+id/btn_kd"
+        app:layout_constraintTop_toBottomOf="@+id/btn_kd" />
+
+    <Button
+        android:id="@+id/btn_tujuan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/gradient_background_round"
+        android:drawableStart="@drawable/ic_open_book"
+        android:padding="10dp"
+        android:text="@string/tujuan"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_indikator"
+        app:layout_constraintStart_toStartOf="@+id/btn_indikator"
+        app:layout_constraintTop_toBottomOf="@+id/btn_indikator" />
+</androidx.constraintlayout.widget.ConstraintLayout>
