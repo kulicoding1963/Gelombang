@@ -68,9 +68,6 @@ class PendahuluanActivity : AppCompatActivity() {
             intent.putExtra(ContentPendahuluanActivity.EXTRA_PDF, "tujuan.pdf")
             startActivity(intent)
         }
-
-
-
     }
 
     override fun onSupportNavigateUp(): Boolean {

@@ -4,14 +4,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.gelombang.apps.R
-import com.gelombang.apps.databinding.ActivityProfileBinding
+import com.gelombang.apps.databinding.ActivityPetunjukBinding
 import com.github.barteksc.pdfviewer.util.FitPolicy
 
-class ProfileActivity : AppCompatActivity() {
+class PetunjukActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding: ActivityProfileBinding = ActivityProfileBinding.inflate(layoutInflater)
+        val binding: ActivityPetunjukBinding = ActivityPetunjukBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(binding.include.toolbar)
@@ -19,16 +19,16 @@ class ProfileActivity : AppCompatActivity() {
         supportActionBar?.title = null
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        binding.include.titleBar.text = resources.getText(R.string.profil)
+        binding.include.titleBar.text = resources.getText(R.string.petunjuk)
         binding.include.btnGuru.visibility = View.GONE
         binding.include.btnHome.visibility = View.GONE
         binding.include.btnMenu.visibility = View.GONE
 
-        binding.pdf.fromAsset("profil.pdf")
+        binding.pdf.fromAsset("petunjuk.pdf")
             .pageFitPolicy(FitPolicy.WIDTH)
             .spacing(0)
-            .enableDoubletap(false)
-            .enableSwipe(false)
+            .enableDoubletap(true)
+            .enableSwipe(true)
             .load()
     }
 

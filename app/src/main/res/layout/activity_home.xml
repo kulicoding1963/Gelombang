@@ -42,21 +42,36 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/btn_profil"
+        android:id="@+id/btn_mulai"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/gradient_background_round"
-        android:drawableStart="@drawable/person_man"
-        android:text="@string/profil"
+        android:drawableStart="@drawable/start_menu"
         android:padding="10dp"
+        android:text="@string/mulai"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_petunjuk"
+        app:layout_constraintEnd_toEndOf="@+id/btn_petunjuk"
+        app:layout_constraintStart_toStartOf="@+id/btn_petunjuk" />
+
+    <Button
+        android:id="@+id/btn_petunjuk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/gradient_background_round"
+        android:drawableStart="@drawable/hint"
+        android:padding="10dp"
+        android:text="@string/petunjuk"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_tentang"
         app:layout_constraintEnd_toEndOf="@+id/btn_tentang"
         app:layout_constraintStart_toStartOf="@+id/btn_tentang" />
-
     <Button
         android:id="@+id/btn_tentang"
         android:layout_width="0dp"
@@ -76,19 +91,35 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
-        android:id="@+id/btn_mulai"
+        android:id="@+id/btn_profil"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/gradient_background_round"
-        android:drawableStart="@drawable/start_menu"
-        android:text="@string/mulai"
+        android:drawableStart="@drawable/person_man"
         android:padding="10dp"
+        android:text="@string/profil"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/btn_tentang"
         app:layout_constraintStart_toStartOf="@+id/btn_tentang"
         app:layout_constraintTop_toBottomOf="@+id/btn_tentang" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/gradient_background_round"
+        android:drawableStart="@drawable/exit"
+        android:padding="10dp"
+        android:text="@string/keluar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_profil"
+        app:layout_constraintStart_toStartOf="@+id/btn_profil"
+        app:layout_constraintTop_toBottomOf="@+id/btn_profil" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

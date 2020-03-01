@@ -47,5 +47,7 @@
     <string name="kesimpulan">Kesimpulan</string>
     <string name="pengumpulan_data">Pengumpulan Data</string>
     <string name="analisis_data">Analisis Data</string>
-    <string name="sedang_memproses">Sedang memproses...</string>
+    <string name="sedang_memproses">Sedang memproses…</string>
+    <string name="petunjuk">Petunjuk</string>
+    <string name="keluar">Keluar</string>
 </resources>

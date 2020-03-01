@@ -23,7 +23,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".ui.menu.HasilEvalusiActivity"></activity>
+        <activity android:name=".ui.PetunjukActivity"></activity>
+        <activity android:name=".ui.menu.HasilEvalusiActivity" />
         <activity
             android:name=".ui.menu.ContentDiskusiActivity"
             android:configChanges="screenSize|orientation"

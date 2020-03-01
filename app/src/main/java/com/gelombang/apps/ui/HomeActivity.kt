@@ -35,7 +35,6 @@ class HomeActivity : AppCompatActivity() {
         binding.include.btnGuru.visibility = View.VISIBLE
         binding.include.btnHome.visibility = View.GONE
         binding.include.btnMenu.visibility = View.GONE
-        binding.include.btnExit.visibility = View.VISIBLE
 
         val back:Boolean? = intent?.getBooleanExtra(BACK,false)
         if(back!!){
@@ -75,12 +74,20 @@ class HomeActivity : AppCompatActivity() {
                 )
             )
         }
+        binding.btnPetunjuk.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    PetunjukActivity::class.java
+                )
+            )
+        }
         binding.btnMulai.setOnClickListener {
             val intent = Intent(this,MainMenuActivity::class.java)
             intent.putExtra(MainMenuActivity.EXTRA_DATA,user)
             startActivity(intent)
         }
-        binding.include.btnExit.setOnClickListener { exitDialog()}
+        binding.btnExit.setOnClickListener { exitDialog()}
     }
 
     private fun showLoginDialogGuru() {
